@@ -7,15 +7,15 @@
     </header>
     <p>
       <strong>Status:</strong>
-      {{currentUser.user.user_type}}
+      {{currentUser.user_type}}
     </p>
     <p>
       <strong>Rides Completed:</strong>
-      {{currentUser.user.rides_count}}
+      {{currentUser.rides_count}}
     </p>
     <p>
       <strong>Name:</strong>
-      {{currentUser.user.username}}
+      {{currentUser.username}}
     </p>
   </div>
 </template>
@@ -28,10 +28,5 @@ export default {
       return this.$store.state.auth.user;
     }
   },
-  mounted() {
-    if (!this.currentUser) {
-      this.$router.push('/login');
-    }
-  }
 };
 </script>

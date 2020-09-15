@@ -2,6 +2,7 @@ import Vue from 'vue';
 import App from './App.vue';
 import { router } from './router';
 import store from './store';
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import VeeValidate from 'vee-validate';
@@ -21,6 +22,8 @@ library.add(faHome, faUser, faUserPlus, faSignInAlt, faSignOutAlt);
 
 Vue.config.productionTip = false;
 
+Vue.use(BootstrapVue);
+Vue.use(IconsPlugin);
 Vue.use(VueToastr$1);
 Vue.use(VeeValidate);
 Vue.component('font-awesome-icon', FontAwesomeIcon);

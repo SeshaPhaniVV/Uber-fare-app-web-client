@@ -1,4 +1,6 @@
-## Note:
+# Note:
+
+## Please make sure backend rails app is running.
 
 ## Project setup
 ```

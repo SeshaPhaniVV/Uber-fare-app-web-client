@@ -33,10 +33,10 @@ export const router = new Router({
       component: () => import('./views/Profile.vue')
     },
     {
-      path: '/user',
-      name: 'user',
+      path: '/ridedetails',
+      name: 'ridedetails',
       // lazy-loaded
-      component: () => import('./views/BoardUser.vue')
+      component: () => import('./views/RideDetails.vue')
     }
   ]
 });
